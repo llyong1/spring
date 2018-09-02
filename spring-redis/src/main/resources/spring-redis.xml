@@ -19,7 +19,7 @@
     <bean id="redisStandaloneConfiguration" class="org.springframework.data.redis.connection.RedisStandaloneConfiguration">
         <property name="hostName" value="${redis.host}"/>
         <property name="port" value="${redis.port}"/>
-        <property name="database" value="3"/>
+        <!--<property name="database" value="3"/>-->
         <!--redis链接密码-->
         <!--<property name="password">-->
             <!--<bean id="redisPassword" class="org.springframework.data.redis.connection.RedisPassword">-->
