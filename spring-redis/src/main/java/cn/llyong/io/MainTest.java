@@ -17,8 +17,8 @@ public class MainTest {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-redis.xml");
         RedisTemplate redisTemplate = (RedisTemplate) applicationContext.getBean("redisTemplate");
         ValueOperations opsForValue = redisTemplate.opsForValue();
-        opsForValue.set("key_name","zhangsan");
-        Object key_name = opsForValue.get("key_name");
-        System.out.println(key_name);
+        opsForValue.set("lly_name","zhangsan");
+        Object name = opsForValue.get("lly_name");
+        System.out.println(name);
     }
 }
